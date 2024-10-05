@@ -1,0 +1,10 @@
+.carousel-inner {
+    height: 700px;
+  }
+  
+#c-i-a {
+    height: 100%; /* Make the image take the full height */
+    width: 100%; /* Make the image take the full width */
+    object-fit: cover;
+    
+  }

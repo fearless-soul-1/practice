@@ -1,0 +1,158 @@
+input{
+    height: 20px;
+    border-radius: 5px;
+
+
+}
+
+
+.box {
+    padding: 10px;
+    text-align: center;
+    font-weight: 800;
+    align-content: center;
+
+    
+}
+
+#box-1{
+    background-color: grey;
+    color: black;
+    height: 25px;
+    text-align: left;
+    display: block;
+
+    
+}
+
+#box-2{
+    background-color: rgb(160, 160, 235);
+    color: black;
+    height: 15px;
+}
+
+
+#box-3{
+    background-color:  #89CFF0;
+    color: black;
+    height: 150px;
+}
+    
+
+
+#box-4{
+    background-color: #B2C8DF;
+    color: black;
+    height: 200px;
+}
+
+#box-5{
+    background-color: rgb(106, 106, 212);
+    color: black;
+    height: 200px;
+    
+}
+
+#box-6{
+    background-color:  #F5A9BC;
+    color: black;
+    height: 200px;
+}
+
+#box-7{
+    background-color: rgb(177, 177, 228);
+    color: black;
+    height: 200px;
+}
+
+#box-8{
+    background-color: rgb(223, 223, 240);
+    color: black;
+    height: 200px;
+}
+
+
+
+
+/* -------------- */
+#box-1 {
+    grid-area: navbar;
+}
+
+#box-2 {
+    grid-area: blank;
+}
+
+#box-3 {
+    grid-area: header;
+}
+
+#box-4 {
+    grid-area: feature1;
+}
+
+#box-5 {
+    grid-area: feature2;
+}
+
+#box-6 {
+    grid-area: feature3;
+}
+
+#box-7 {
+    grid-area: signup;
+}
+
+#box-8 {
+    grid-area: content;
+}
+
+
+
+
+
+@media(min-width:1000px){  
+    .container{
+        display: grid;
+    grid-template-areas: "navbar navbar navbar" 
+                         "blank blank blank" 
+                         "header header header"
+                         "feature1 feature2 feature3"
+                         "signup signup signup"
+                         "content content content";
+    border: 2px solid black;
+    border-radius: 8px;} 
+    }
+
+
+
+@media(min-width:600px) and (max-width:999px){
+        .container{
+            display: grid;
+            grid-template-areas: "navbar navbar" 
+                         "blank blank" 
+                         "header header"
+                         "content content"
+                         "signup feature1"
+                         "feature3 feature2";
+            border: 2px solid black;
+            border-radius: 8px;} 
+        }
+
+
+    
+@media(max-width:599px){
+    .container{
+        display: grid;
+        grid-template-areas: "navbar navbar navbar" 
+        "blank blank blank" 
+        "header header header"
+        "content content content"
+        "signup signup signup"
+        "feature1 feature1 feature1"
+        "feature3 feature3 feature3"
+        "feature2 feature2 feature2";
+        border: 2px solid black;
+        border-radius: 8px; }
+        
+    }

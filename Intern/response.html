@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box{
+            background-color: black;
+            color: white;
+        } */
+        /* #when width is min 500px or 500 */
+        /* @media (max-width:500px) 
+        {
+            .box{
+            background-color: red;
+            color: yellow;
+        }} */
+        /* #when width is max 1000px or 10000 */
+        /* @media (min-width:1000px){   
+            .box{
+                display: none;
+            }
+        } */
+
+        .img {
+            width: 200px;
+            display: none;
+        }
+        @media(min-width:1000px){
+            #laptop{
+                display: block;
+            }
+        }
+
+        @media(min-width:600px) and (max-width:999px){
+            #tablet{
+                display: block;
+            }
+        }
+
+        @media(max-width:599px){
+            #mobile{
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis beatae totam nam eveniet veritatis nihil itaque sapiente, quo repellat ut quod maxime nisi aut nostrum voluptatem minus nesciunt. Veritatis sit error, consectetur corrupti blanditiis iusto vel amet quas eum et sint odit aliquid sapiente nam sequi, explicabo nemo repudiandae, maiores provident esse! Aspernatur quasi at voluptatum omnis consequatur deleniti sunt perspiciatis, dolores aut rerum modi consequuntur aliquid incidunt ipsum maxime molestiae itaque accusamus! Aut modi esse dolores error laborum et ab debitis tempora vitae excepturi culpa, dignissimos maxime enim aliquid ratione iusto nisi recusandae cumque? Pariatur laudantium laboriosam doloremque eveniet?
+    </div> -->
+
+    <div class="laptop">
+        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlygWcz51gyDexlstejSgZZ2LSxqF4rBz3wQ&s"
+         alt="" id="laptop">
+    </div>
+
+    <div class="mobile">
+        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXUVXERm3yWgAa9s5uAIG2et2PtD1mM-1n6g&s"
+         alt="" id="mobile">
+    </div>
+
+    <div class="tablet">
+        <img class="img" src="https://m.media-amazon.com/images/I/4129iYx95yL.jpg"
+         alt="" id="tablet">
+    </div>
+
+
+</body>
+</html>

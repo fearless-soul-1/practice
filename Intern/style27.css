@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* when the screen size decrease text not move left side  */
+html,body {
+    overflow: scroll;
+}
+.first-nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0EDC8D;
+    height: 50px;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    /*padding (t, r, b, l) */
+    padding: 0px 50px 0px 50px ; 
+}
+.social-hnd {
+    display: flex;
+}
+
+svg {
+    margin-left: 20px;
+}
+
+.reg-btn {
+    padding: 8px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.login-btn {
+    padding: 8px;
+    color: #0EDC8D;
+    font-weight: 900;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+
+.logo img{
+    width:190px;
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.active{
+    color:#0EDC8D ;
+}
+
+.search-icon {
+    position: relative;
+    left: 70px;
+}
+.search-icon input {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.search-icon button {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.web-banner{
+    /* bg-img: top, bottom */
+    background-image: linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.8)) ,
+    url("https://t4.ftcdn.net/jpg/05/39/10/47/360_F_539104776_BchIZKRhIUXDY0ZaVHxaoIDvRa2eAG3d.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.start-to-learn {
+    width: 250px;
+    padding: 15px;
+    background-color: #0EDC8D;
+    color: white;
+    font-weight: 900;
+    border-radius: 25px;
+    border: none;
+}
+
+.para{
+    width: 400px;
+}
+
+.learn-more {
+    margin-top: 20px;
+    padding: 14px;
+    background-color: white;
+    border: none;
+    color: gray;
+    font-weight: bolder;
+}
+
+.our-courses {
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 14px;
+    background-color: #0EDC8D;
+    border: none;
+    color: rgb(248, 244, 244);
+    font-weight: bolder;
+}
+
+/* card  creating*/
+
+.card {
+    width: 17rem;
+    border: 2px solid grey;
+    text-align: center;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 9px 11px 46px 3px rgba(0,0,0,0.75);
+}
+
+ul li {
+    list-style-type: none;
+}
+
+
+.card img{
+    width:100% ;
+    /* border-radius: 6px; */
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.card .info {
+    padding: 6px;
+}
+
+.prod-container {
+    display: flex;
+    /* margin: 10px; */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.search-btn:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+/* responsive css */
+/* below 700  */
+@media (max-width:700px) {
+    .search-icon {
+        position: relative;
+        left: -10px;
+        display: flex;
+    }
+
+    .menu a {
+        text-decoration: none;
+        font-size: 11px;
+    } 
+    
+    .search-icon input {
+        padding: 5px;
+        border: 1px solid grey;
+        border-radius: 4px;
+    }
+
+    .search-icon button {
+        padding: 5px;
+        border: 1px solid grey;
+        border-radius: 4px;
+    }
+
+    .logo img {
+        width: 145px;
+    }
+
+}
